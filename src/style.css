@@ -12,6 +12,12 @@ a {
   color: #35c7bc;
 }
 
+p {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+
 a:hover {
   color: #35c7bc;
   font-weight: 500;
