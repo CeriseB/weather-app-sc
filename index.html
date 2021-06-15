@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather App</title>
-    <!-- Plus Week 6 Homework-->
+    <!-- Plus Week 5 Homework-->
 
     <link
       rel="stylesheet"
@@ -28,7 +28,73 @@
   </head>
 
   <body>
-    <h1>Hello Git</h1>
-    <script src="script.js"></script>
+    <div id="container-weather-app">
+      <!-- form section -->
+      <form class="search-form" id="search-form">
+        <div class="weather-app-input">
+          <input
+            type="search"
+            placeholder="Type your city..."
+            autofocus="on"
+            autocomplete="off"
+            id="city-input"
+            class="city-input"
+          />
+          <input
+            type="submit"
+            value="Search"
+            id="submit-button"
+            class="submit-button"
+          />
+          <button id="current-location-button">Current</button>
+        </div>
+      </form>
+
+      <!-- location and details section -->
+      <div id="date-description-wrapper">
+        <h1 class="location-display" id="city"></h1>
+        <span class="day-temp-details" id="date"></span>
+        <span id="description" class="day-temp-details"></span>
+      </div>
+
+      <!-- weather details section -->
+      <div id="weather-wrapper">
+        <!-- weather icon -->
+        <div>
+          <i class="fas fa-cloud-meatball" id="weather-icon"></i>
+        </div>
+
+        <!-- current temp -->
+        <div id="main-temperature">
+          <span id="temperature" class="temperature"> 58 </span>
+
+          <span class="temp-units">°F | °C </span>
+        </div>
+
+        <!-- deets inside details -->
+        <div id="weather-details-box">
+          <ul>
+            <!-- <li>
+            Precipitation:
+            <span
+              id="precipitation"
+              class="weather-details-numbers">
+              80%
+            </span>
+          </li> -->
+            <li>
+              Humidity:
+              <span id="humidity" class="weather-details-numbers"> 74% </span>
+            </li>
+            <li>
+              Wind:
+              <span id="wind" class="weather-details-numbers"> 5mph </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
   </body>
 </html>
